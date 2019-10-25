@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/PWKad/litecoin-core-wallet#readme",
   "dependencies": {
-    "concurrently": "^3.5.1"
+    "concurrently": "^3.6.1"
   }
 }
