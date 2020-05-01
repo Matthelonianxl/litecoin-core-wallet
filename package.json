@@ -6,7 +6,9 @@
   "scripts": {
     "start": "concurrent \"npm run client\" \"npm run proxy-adapter\"",
     "client": "cd ./client && gulp watch",
-    "proxy-adapter": " cd ./proxy-adapter && npm start"
+    "proxy-adapter": " cd ./proxy-adapter && npm start",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/PWKad/litecoin-core-wallet#readme",
   "dependencies": {
-    "concurrently": "^3.5.1"
-  }
+    "concurrently": "^3.5.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
